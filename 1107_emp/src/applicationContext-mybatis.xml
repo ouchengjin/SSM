@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+        default-autowire="byName">
+    <!-- spring的注解扫描 -->
+    <context:component-scan base-package="com.bjsxt.service.impl"/>
+    <!-- 加载properties文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!-- 配置数据源 -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    	<property name="driverClassName" value="${jdbc.driver}"></property>
+   		<property name="url" value="${jdbc.url}"></property>
+   		<property name="username" value="${jdbc.username}"></property>
+   		<property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!-- sqlsessionfactory -->
+    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean"/>
+    <!-- mapper扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    	<property name="sqlSessionFactoryBeanName" value="factory"></property>	
+    	<property name="basePackage" value="com.bjsxt.mapper"></property>	
+    </bean>
+    <!-- 配置事务管理器 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"/>
+    <!-- 配置声明式事务 -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+    	<tx:attributes>
+    		<tx:method name="ins*"/>
+    		<tx:method name="upd*"/>
+    		<tx:method name="del*"/>
+    		<tx:method name="*" read-only="true"/>
+    	</tx:attributes>
+    </tx:advice>
+    <!-- 配置AOP -->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+    <aop:config>
+    	<aop:pointcut expression="execution(* com.bjsxt.service.impl.*.*(..))" id="pt"/>
+    	<aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+    </aop:config>
+    
+</beans>

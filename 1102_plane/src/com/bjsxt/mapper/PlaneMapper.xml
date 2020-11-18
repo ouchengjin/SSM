@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.PlaneMapper">
+	<resultMap type="plane" id="pmap">
+		<id column="id" property="id"/>
+		<result column="ptype" property="ptype"/>
+		<result column="time" property="time"/>
+		<result column="price" property="price"/>
+		<result column="sid" property="sid"/>
+		<result column="eid" property="eid"/>
+		<association property="startPort" javaType="Airport">
+			<id column="sid" property="id"/>
+			<result column="sname" property="name"/>
+			<result column="scity" property="city"/>
+		</association>
+		<association property="endPort" javaType="Airport">
+			<id column="eid" property="id"/>
+			<result column="ename" property="name"/>
+			<result column="ecity" property="city"/>
+		</association>
+	</resultMap>
+
+
+	<select id="selAll" resultMap="pmap">
+		select p.*,s.`name` sname,s.city scity,e.`name` ename,e.city ecity from plane p LEFT OUTER JOIN airport s on p.sid=s.id LEFT OUTER JOIN airport e on p.eid = e.id
+		<where>
+			<if test="sid != -1">
+			and sid = #{sid}
+			</if>
+			<if test="eid !=-1">
+			and eid = #{eid}
+			</if>
+		</where>
+	</select>
+</mapper>

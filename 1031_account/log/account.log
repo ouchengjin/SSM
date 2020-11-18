@@ -1,0 +1,799 @@
+2020-07-01 11:22:43 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 11:22:43 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 11:22:43 <==      Total: 1
+2020-07-01 11:22:43 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 11:22:43 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 11:22:43 <==      Total: 1
+2020-07-01 11:22:43 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 11:22:43 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 11:22:43 <==    Updates: 1
+2020-07-01 11:22:43 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 11:22:43 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 11:22:43 <==    Updates: 1
+2020-07-01 11:22:43 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 11:22:43 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 11:22:43 <==    Updates: 1
+2020-07-01 11:22:43 张无忌向赵敏转账100.0元
+2020-07-01 12:06:59 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 12:06:59 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 12:06:59 <==      Total: 1
+2020-07-01 12:06:59 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 12:06:59 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 12:06:59 <==      Total: 1
+2020-07-01 12:06:59 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:06:59 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 12:06:59 <==    Updates: 1
+2020-07-01 12:06:59 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:06:59 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 12:06:59 <==    Updates: 1
+2020-07-01 12:06:59 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 12:06:59 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 12:06:59 <==    Updates: 1
+2020-07-01 12:06:59 张无忌向赵敏转账100.0元
+2020-07-01 12:08:57 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 12:08:57 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 12:08:57 <==      Total: 1
+2020-07-01 12:08:57 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 12:08:57 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 12:08:57 <==      Total: 1
+2020-07-01 12:08:57 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:08:57 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 12:08:57 <==    Updates: 1
+2020-07-01 12:08:57 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:08:57 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 12:08:57 <==    Updates: 1
+2020-07-01 12:08:57 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 12:08:57 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 12:08:57 <==    Updates: 1
+2020-07-01 12:08:57 张无忌向赵敏转账100.0元
+2020-07-01 12:12:07 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 12:12:07 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 12:12:07 <==      Total: 1
+2020-07-01 12:12:07 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 12:12:07 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 12:12:07 <==      Total: 1
+2020-07-01 12:12:07 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:12:07 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 12:12:07 <==    Updates: 1
+2020-07-01 12:12:07 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:12:07 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 12:12:07 <==    Updates: 1
+2020-07-01 12:12:07 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 12:12:07 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 12:12:07 <==    Updates: 1
+2020-07-01 12:12:07 张无忌向赵敏转账100.0元
+2020-07-01 12:12:07 ==>  Preparing: select count(*) from log 
+2020-07-01 12:12:07 ==> Parameters: 
+2020-07-01 12:12:07 <==      Total: 1
+2020-07-01 12:12:07 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:12:07 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:12:07 <==      Total: 5
+2020-07-01 12:12:39 ==>  Preparing: select count(*) from log 
+2020-07-01 12:12:39 ==> Parameters: 
+2020-07-01 12:12:39 <==      Total: 1
+2020-07-01 12:12:39 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:12:39 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-01 12:12:39 <==      Total: 3
+2020-07-01 12:12:41 ==>  Preparing: select count(*) from log 
+2020-07-01 12:12:41 ==> Parameters: 
+2020-07-01 12:12:41 <==      Total: 1
+2020-07-01 12:12:41 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:12:41 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:12:41 <==      Total: 5
+2020-07-01 12:18:25 ==>  Preparing: select count(*) from log 
+2020-07-01 12:18:25 ==> Parameters: 
+2020-07-01 12:18:25 <==      Total: 1
+2020-07-01 12:18:25 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:18:25 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:18:25 <==      Total: 5
+2020-07-01 12:21:05 ==>  Preparing: select count(*) from log 
+2020-07-01 12:21:05 ==> Parameters: 
+2020-07-01 12:21:05 <==      Total: 1
+2020-07-01 12:21:05 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:21:05 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:21:05 <==      Total: 5
+2020-07-01 12:24:26 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 12:24:27 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 12:24:27 <==      Total: 1
+2020-07-01 12:24:27 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 12:24:27 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 12:24:27 <==      Total: 1
+2020-07-01 12:24:27 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:24:27 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 12:24:27 <==    Updates: 1
+2020-07-01 12:24:27 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:24:27 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 12:24:27 <==    Updates: 1
+2020-07-01 12:24:27 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 12:24:27 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 12:24:27 <==    Updates: 1
+2020-07-01 12:24:27 张无忌向赵敏转账100.0元
+2020-07-01 12:24:27 ==>  Preparing: select count(*) from log 
+2020-07-01 12:24:27 ==> Parameters: 
+2020-07-01 12:24:27 <==      Total: 1
+2020-07-01 12:24:27 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:24:27 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:24:27 <==      Total: 5
+2020-07-01 12:27:20 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-01 12:27:20 Class not found: org.jboss.vfs.VFS
+2020-07-01 12:27:20 JBoss 6 VFS API is not available in this environment.
+2020-07-01 12:27:20 Class not found: org.jboss.vfs.VirtualFile
+2020-07-01 12:27:20 VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-07-01 12:27:20 Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Reader entry: Account.class
+2020-07-01 12:27:20 Reader entry: Log.class
+2020-07-01 12:27:20 Reader entry: Pagination.class
+2020-07-01 12:27:20 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 Opening JDBC Connection
+2020-07-01 12:27:20 Created connection 233455292.
+2020-07-01 12:27:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@dea3ebc]
+2020-07-01 12:27:20 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-01 12:27:20 ==> Parameters: 1(Integer), 123456(String)
+2020-07-01 12:27:20 <==      Total: 1
+2020-07-01 12:27:20 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 12:27:20 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-01 12:27:20 <==      Total: 1
+2020-07-01 12:27:20 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:27:20 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-01 12:27:20 <==    Updates: 1
+2020-07-01 12:27:20 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-01 12:27:20 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-01 12:27:20 <==    Updates: 1
+2020-07-01 12:27:20 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-01 12:27:20 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-01 12:27:20 <==    Updates: 1
+2020-07-01 12:27:20 张无忌向赵敏转账100.0元
+2020-07-01 12:27:20 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@dea3ebc]
+2020-07-01 12:27:20 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@dea3ebc]
+2020-07-01 12:27:20 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@dea3ebc]
+2020-07-01 12:27:20 Returned connection 233455292 to pool.
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Reader entry: Account.class
+2020-07-01 12:27:20 Reader entry: Log.class
+2020-07-01 12:27:20 Reader entry: Pagination.class
+2020-07-01 12:27:20 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 Opening JDBC Connection
+2020-07-01 12:27:20 Created connection 1295546968.
+2020-07-01 12:27:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d387a58]
+2020-07-01 12:27:20 ==>  Preparing: select count(*) from log 
+2020-07-01 12:27:20 ==> Parameters: 
+2020-07-01 12:27:20 <==      Total: 1
+2020-07-01 12:27:20 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d387a58]
+2020-07-01 12:27:20 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d387a58]
+2020-07-01 12:27:20 Returned connection 1295546968 to pool.
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Reader entry: Account.class
+2020-07-01 12:27:20 Reader entry: Log.class
+2020-07-01 12:27:20 Reader entry: Pagination.class
+2020-07-01 12:27:20 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:27:20 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:27:20 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:27:20 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:27:20 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:27:20 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:27:20 Opening JDBC Connection
+2020-07-01 12:27:20 Created connection 1370390442.
+2020-07-01 12:27:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51ae7faa]
+2020-07-01 12:27:20 ==>  Preparing: select * from log limit ?,? 
+2020-07-01 12:27:20 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:27:20 <==      Total: 5
+2020-07-01 12:27:20 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51ae7faa]
+2020-07-01 12:27:20 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51ae7faa]
+2020-07-01 12:27:20 Returned connection 1370390442 to pool.
+2020-07-01 12:30:09 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-01 12:30:09 Class not found: org.jboss.vfs.VFS
+2020-07-01 12:30:09 JBoss 6 VFS API is not available in this environment.
+2020-07-01 12:30:09 Class not found: org.jboss.vfs.VirtualFile
+2020-07-01 12:30:09 VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-07-01 12:30:09 Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Reader entry: Account.class
+2020-07-01 12:30:09 Reader entry: Log.class
+2020-07-01 12:30:09 Reader entry: Pagination.class
+2020-07-01 12:30:09 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:09 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:09 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:09 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 Opening JDBC Connection
+2020-07-01 12:30:09 Created connection 879680343.
+2020-07-01 12:30:09 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@346edb57]
+2020-07-01 12:30:09 ==>  Preparing: select count(*) from log 
+2020-07-01 12:30:09 ==> Parameters: 
+2020-07-01 12:30:09 <==      Total: 1
+2020-07-01 12:30:09 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@346edb57]
+2020-07-01 12:30:09 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@346edb57]
+2020-07-01 12:30:09 Returned connection 879680343 to pool.
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Reader entry: Account.class
+2020-07-01 12:30:09 Reader entry: Log.class
+2020-07-01 12:30:09 Reader entry: Pagination.class
+2020-07-01 12:30:09 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:09 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:09 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:09 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:09 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:09 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:09 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:09 Opening JDBC Connection
+2020-07-01 12:30:09 Created connection 208733048.
+2020-07-01 12:30:09 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c710378]
+2020-07-01 12:30:09 ==>  Preparing: select outId,inId,balace balance from log limit ?,? 
+2020-07-01 12:30:09 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:30:09 <==      Total: 5
+2020-07-01 12:30:09 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c710378]
+2020-07-01 12:30:09 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c710378]
+2020-07-01 12:30:09 Returned connection 208733048 to pool.
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Reader entry: Account.class
+2020-07-01 12:30:12 Reader entry: Log.class
+2020-07-01 12:30:12 Reader entry: Pagination.class
+2020-07-01 12:30:12 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:12 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:12 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:12 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 Opening JDBC Connection
+2020-07-01 12:30:12 Created connection 667379894.
+2020-07-01 12:30:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c768b6]
+2020-07-01 12:30:12 ==>  Preparing: select count(*) from log 
+2020-07-01 12:30:12 ==> Parameters: 
+2020-07-01 12:30:12 <==      Total: 1
+2020-07-01 12:30:12 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c768b6]
+2020-07-01 12:30:12 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c768b6]
+2020-07-01 12:30:12 Returned connection 667379894 to pool.
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Reader entry: Account.class
+2020-07-01 12:30:12 Reader entry: Log.class
+2020-07-01 12:30:12 Reader entry: Pagination.class
+2020-07-01 12:30:12 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:12 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:12 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:12 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:12 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:12 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:12 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:12 Opening JDBC Connection
+2020-07-01 12:30:12 Created connection 1582990392.
+2020-07-01 12:30:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e5a8438]
+2020-07-01 12:30:12 ==>  Preparing: select outId,inId,balace balance from log limit ?,? 
+2020-07-01 12:30:12 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-01 12:30:12 <==      Total: 5
+2020-07-01 12:30:12 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e5a8438]
+2020-07-01 12:30:12 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e5a8438]
+2020-07-01 12:30:12 Returned connection 1582990392 to pool.
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Reader entry: Account.class
+2020-07-01 12:30:14 Reader entry: Log.class
+2020-07-01 12:30:14 Reader entry: Pagination.class
+2020-07-01 12:30:14 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:14 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:14 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:14 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 Opening JDBC Connection
+2020-07-01 12:30:14 Created connection 1032816943.
+2020-07-01 12:30:14 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3d8f892f]
+2020-07-01 12:30:14 ==>  Preparing: select count(*) from log 
+2020-07-01 12:30:14 ==> Parameters: 
+2020-07-01 12:30:14 <==      Total: 1
+2020-07-01 12:30:14 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3d8f892f]
+2020-07-01 12:30:14 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3d8f892f]
+2020-07-01 12:30:14 Returned connection 1032816943 to pool.
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Reader entry: Account.class
+2020-07-01 12:30:14 Reader entry: Log.class
+2020-07-01 12:30:14 Reader entry: Pagination.class
+2020-07-01 12:30:14 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:14 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:14 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:14 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:14 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:14 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:14 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:14 Opening JDBC Connection
+2020-07-01 12:30:14 Created connection 995199519.
+2020-07-01 12:30:14 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3b518a1f]
+2020-07-01 12:30:14 ==>  Preparing: select outId,inId,balace balance from log limit ?,? 
+2020-07-01 12:30:14 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-01 12:30:14 <==      Total: 5
+2020-07-01 12:30:14 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3b518a1f]
+2020-07-01 12:30:14 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3b518a1f]
+2020-07-01 12:30:14 Returned connection 995199519 to pool.
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Reader entry: Account.class
+2020-07-01 12:30:15 Reader entry: Log.class
+2020-07-01 12:30:15 Reader entry: Pagination.class
+2020-07-01 12:30:15 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:15 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:15 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:15 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 Opening JDBC Connection
+2020-07-01 12:30:15 Created connection 748306087.
+2020-07-01 12:30:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c9a3ea7]
+2020-07-01 12:30:15 ==>  Preparing: select count(*) from log 
+2020-07-01 12:30:15 ==> Parameters: 
+2020-07-01 12:30:15 <==      Total: 1
+2020-07-01 12:30:15 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c9a3ea7]
+2020-07-01 12:30:15 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c9a3ea7]
+2020-07-01 12:30:15 Returned connection 748306087 to pool.
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Reader entry: Account.class
+2020-07-01 12:30:15 Reader entry: Log.class
+2020-07-01 12:30:15 Reader entry: Pagination.class
+2020-07-01 12:30:15 Listing file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Account.class
+2020-07-01 12:30:15 Reader entry: ����   4 -  com/bjsxt/pojo/Account  java/lang/Object id Ljava/lang/Integer; pwd Ljava/lang/String; balance Ljava/lang/Double; name <init> ()V Code
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Log.class
+2020-07-01 12:30:15 Reader entry: ����   4 *  com/bjsxt/pojo/Log  java/lang/Object id Ljava/lang/Integer; outId inId balance Ljava/lang/Double; <init> ()V Code
+2020-07-01 12:30:15 Find JAR URL: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:15 Not a JAR: file:/E:/apache-tomcat-8.5.56-windows-x64/apache-tomcat-8.5.56/webapps/1031_account/WEB-INF/classes/com/bjsxt/pojo/Pagination.class
+2020-07-01 12:30:15 Reader entry: ����   4 |  com/bjsxt/pojo/Pagination  java/lang/Object page I size 
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Account matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Log matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Checking to see if class com.bjsxt.pojo.Pagination matches criteria [is assignable to Object]
+2020-07-01 12:30:15 Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 PooledDataSource forcefully closed/removed all connections.
+2020-07-01 12:30:15 Opening JDBC Connection
+2020-07-01 12:30:15 Created connection 1308960341.
+2020-07-01 12:30:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4e052655]
+2020-07-01 12:30:15 ==>  Preparing: select outId,inId,balace balance from log limit ?,? 
+2020-07-01 12:30:15 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-01 12:30:15 <==      Total: 5
+2020-07-01 12:30:15 Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4e052655]
+2020-07-01 12:30:15 Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4e052655]
+2020-07-01 12:30:15 Returned connection 1308960341 to pool.
+2020-07-01 15:30:45 ==>  Preparing: select * from account 
+2020-07-01 15:30:45 ==> Parameters: 
+2020-07-01 15:30:45 <==      Total: 2
+2020-07-01 15:44:38 ==>  Preparing: select * from account 
+2020-07-01 15:44:38 ==> Parameters: 
+2020-07-01 15:44:38 <==      Total: 2
+2020-07-01 15:45:00 ==>  Preparing: select * from account 
+2020-07-01 15:45:00 ==> Parameters: 
+2020-07-01 15:45:00 <==      Total: 2
+2020-07-01 15:48:56 ==>  Preparing: select * from account 
+2020-07-01 15:48:56 ==> Parameters: 
+2020-07-01 15:48:56 <==      Total: 2
+2020-07-01 15:49:01 ==>  Preparing: select * from account 
+2020-07-01 15:49:01 ==> Parameters: 
+2020-07-01 15:49:01 <==      Total: 2
+2020-07-01 16:05:29 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 16:05:29 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-01 16:05:29 <==      Total: 1
+2020-07-01 16:06:11 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 16:06:11 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-01 16:06:11 <==      Total: 1
+2020-07-01 16:11:52 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 16:11:52 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-01 16:11:52 <==      Total: 1
+2020-07-01 16:43:28 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-01 16:43:28 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-01 16:43:28 <==      Total: 1
+2020-07-01 17:18:20 ==>  Preparing: select * from account where 1=1 and name = ? and pwd = ? 
+2020-07-01 17:18:20 ==> Parameters: 张无忌(String), 123456(String)
+2020-07-01 17:18:20 <==      Total: 1
+2020-07-01 17:18:33 ==>  Preparing: select * from account where 1=1 and name = ? and pwd = ? 
+2020-07-01 17:18:33 ==> Parameters: 驱蚊器翁(String), 而我却二群无(String)
+2020-07-01 17:18:33 <==      Total: 0
+2020-07-01 17:18:56 ==>  Preparing: select * from account where 1=1 and name = ? 
+2020-07-01 17:18:56 ==> Parameters: 赵敏(String)
+2020-07-01 17:18:56 <==      Total: 1
+2020-07-01 17:19:22 ==>  Preparing: select * from account where 1=1 
+2020-07-01 17:19:22 ==> Parameters: 
+2020-07-01 17:19:22 <==      Total: 2
+2020-07-01 17:20:03 ==>  Preparing: select * from account where 1=1 and name = ? 
+2020-07-01 17:20:03 ==> Parameters: 张无忌(String)
+2020-07-01 17:20:03 <==      Total: 1
+2020-07-01 17:20:20 ==>  Preparing: select * from account where 1=1 and name = ? and pwd = ? 
+2020-07-01 17:20:20 ==> Parameters: 张无忌(String), 123456(String)
+2020-07-01 17:20:20 <==      Total: 1
+2020-07-01 17:23:36 ==>  Preparing: select * from account 
+2020-07-01 17:23:36 ==> Parameters: 
+2020-07-01 17:23:36 <==      Total: 2
+2020-07-01 17:23:45 ==>  Preparing: select * from account WHERE name = ? 
+2020-07-01 17:23:46 ==> Parameters: 张无忌(String)
+2020-07-01 17:23:46 <==      Total: 1
+2020-07-01 17:24:06 ==>  Preparing: select * from account WHERE pwd = ? 
+2020-07-01 17:24:06 ==> Parameters: 123(String)
+2020-07-01 17:24:06 <==      Total: 0
+2020-07-01 17:24:15 ==>  Preparing: select * from account WHERE pwd = ? 
+2020-07-01 17:24:15 ==> Parameters: 123456(String)
+2020-07-01 17:24:15 <==      Total: 2
+2020-07-01 17:24:44 ==>  Preparing: select * from account WHERE name = ? and pwd = ? 
+2020-07-01 17:24:44 ==> Parameters: 张无忌(String), 123456(String)
+2020-07-01 17:24:44 <==      Total: 1
+2020-07-01 18:14:10 ==>  Preparing: select * from account WHERE 1 = 1 
+2020-07-01 18:14:11 ==> Parameters: 
+2020-07-01 18:14:11 <==      Total: 2
+2020-07-01 18:14:20 ==>  Preparing: select * from account WHERE name = ? 
+2020-07-01 18:14:21 ==> Parameters: 张无忌(String)
+2020-07-01 18:14:21 <==      Total: 1
+2020-07-01 18:14:34 ==>  Preparing: select * from account WHERE name = ? 
+2020-07-01 18:14:34 ==> Parameters: 赵敏(String)
+2020-07-01 18:14:34 <==      Total: 1
+2020-07-01 18:16:51 ==>  Preparing: select * from account WHERE pwd = ? 
+2020-07-01 18:16:51 ==> Parameters: 123456(String)
+2020-07-01 18:16:51 <==      Total: 2
+2020-07-01 18:32:23 ==>  Preparing: update account SET pwd = ? name = ? WHERE id = ? 
+2020-07-01 18:32:23 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:37:19 ==>  Preparing: update account SET pwd = ? name = ? WHERE id = ? 
+2020-07-01 18:37:19 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:39:26 ==>  Preparing: update account SET pwd = ?, name = ?, WHERE id = ? 
+2020-07-01 18:39:26 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:39:43 ==>  Preparing: update account SET pwd = ?, name = ? WHERE id = ? 
+2020-07-01 18:39:43 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:39:43 <==    Updates: 1
+2020-07-01 18:40:17 ==>  Preparing: update account SET pwd = ? name = ? WHERE id = ? 
+2020-07-01 18:40:17 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:40:41 ==>  Preparing: update account SET pwd = ?, name = ? WHERE id = ? 
+2020-07-01 18:40:41 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:40:41 <==    Updates: 1
+2020-07-01 18:42:48 ==>  Preparing: update account SET pwd = ?, name = ?, WHERE id = ? 
+2020-07-01 18:42:48 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:44:52 ==>  Preparing: update account SET pwd = ?, name = ? where id = ? 
+2020-07-01 18:44:52 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:44:52 <==    Updates: 1
+2020-07-01 18:45:09 ==>  Preparing: update account SET pwd = ?, name = ? where id = ? 
+2020-07-01 18:45:09 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:45:09 <==    Updates: 1
+2020-07-01 18:45:21 ==>  Preparing: update account SET pwd = ? name = ? where id = ? 
+2020-07-01 18:45:21 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:45:40 ==>  Preparing: update account SET pwd = ?, name = ? where id = ? 
+2020-07-01 18:45:40 ==> Parameters: 888888(String), 欧成金(String), 1(Integer)
+2020-07-01 18:45:40 <==    Updates: 1
+2020-07-01 18:46:00 ==>  Preparing: update account SET pwd = ?, name = ? where id = ? 
+2020-07-01 18:46:00 ==> Parameters: 123456(String), 张无忌(String), 1(Integer)
+2020-07-01 18:46:00 <==    Updates: 1
+2020-07-01 20:58:24 ==>  Preparing: update account set pwd = ? where id = ? 
+2020-07-01 20:58:24 ==> Parameters: 222222(String), 1(Integer)
+2020-07-01 20:58:24 <==    Updates: 1
+2020-07-01 21:10:56 ==>  Preparing: select * from account 会自动加上where且去掉第一个and WHERE OGNL表达式，直接使用名称判断即可（接口中的参数一定要加注解） and name like ? 
+2020-07-01 21:10:56 ==> Parameters: %赵%(String)
+2020-07-01 21:12:11 ==>  Preparing: select * from account WHERE name like ? 
+2020-07-01 21:12:11 ==> Parameters: %赵%(String)
+2020-07-01 21:12:11 <==      Total: 1
+2020-07-01 22:25:41 ==>  Preparing: select * from account where id in ( ? , ? , ? ) 
+2020-07-01 22:25:41 ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2020-07-01 22:25:41 <==      Total: 3
+2020-07-01 22:25:56 ==>  Preparing: select * from account where id in ( ? , ? , ? ) 
+2020-07-01 22:25:56 ==> Parameters: 1(Integer), 2(Integer), 4(Integer)
+2020-07-01 22:25:56 <==      Total: 3
+2020-07-01 22:27:48 ==>  Preparing: select * from account where id in ( ? , ? , ? ) 
+2020-07-01 22:27:48 ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2020-07-01 22:27:48 <==      Total: 3
+2020-07-01 22:33:56 ==>  Preparing: select id,pwd,balance,name from account where id in ( ? , ? , ? ) 
+2020-07-01 22:33:56 ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2020-07-01 22:33:56 <==      Total: 3
+2020-07-03 21:08:55 ==>  Preparing: select count(*) from log 
+2020-07-03 21:08:55 ==> Parameters: 
+2020-07-03 21:08:55 <==      Total: 1
+2020-07-03 21:09:00 ==>  Preparing: select count(*) from log 
+2020-07-03 21:09:00 ==> Parameters: 
+2020-07-03 21:09:00 <==      Total: 1
+2020-07-03 21:10:08 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-03 21:10:08 ==> Parameters: 1(Integer), 123456(String)
+2020-07-03 21:10:08 <==      Total: 0
+2020-07-03 21:10:48 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-03 21:10:48 ==> Parameters: 1(Integer), 222222(String)
+2020-07-03 21:10:48 <==      Total: 1
+2020-07-03 21:10:48 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-03 21:10:48 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-03 21:10:48 <==      Total: 1
+2020-07-03 21:10:48 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:10:48 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-03 21:10:48 <==    Updates: 1
+2020-07-03 21:10:48 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:10:48 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-03 21:10:48 <==    Updates: 1
+2020-07-03 21:10:48 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-03 21:10:48 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-03 21:10:48 <==    Updates: 1
+2020-07-03 21:10:48 张无忌向赵敏转账100.0元
+2020-07-03 21:10:48 ==>  Preparing: select count(*) from log 
+2020-07-03 21:10:48 ==> Parameters: 
+2020-07-03 21:10:48 <==      Total: 1
+2020-07-03 21:10:48 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:10:48 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-03 21:10:48 <==      Total: 5
+2020-07-03 21:10:51 ==>  Preparing: select count(*) from log 
+2020-07-03 21:10:51 ==> Parameters: 
+2020-07-03 21:10:51 <==      Total: 1
+2020-07-03 21:10:51 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:10:51 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-03 21:10:51 <==      Total: 5
+2020-07-03 21:10:52 ==>  Preparing: select count(*) from log 
+2020-07-03 21:10:52 ==> Parameters: 
+2020-07-03 21:10:52 <==      Total: 1
+2020-07-03 21:10:52 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:10:52 ==> Parameters: 10(Integer), 5(Integer)
+2020-07-03 21:10:52 <==      Total: 1
+2020-07-03 21:10:54 ==>  Preparing: select count(*) from log 
+2020-07-03 21:10:54 ==> Parameters: 
+2020-07-03 21:10:54 <==      Total: 1
+2020-07-03 21:10:54 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:10:54 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-03 21:10:54 <==      Total: 5
+2020-07-03 21:10:55 ==>  Preparing: select count(*) from log 
+2020-07-03 21:10:55 ==> Parameters: 
+2020-07-03 21:10:55 <==      Total: 1
+2020-07-03 21:10:55 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:10:55 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-03 21:10:55 <==      Total: 5
+2020-07-03 21:11:08 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-03 21:11:08 ==> Parameters: 1(Integer), 222222(String)
+2020-07-03 21:11:08 <==      Total: 1
+2020-07-03 21:11:08 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-03 21:11:08 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-03 21:11:08 <==      Total: 1
+2020-07-03 21:11:08 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:11:08 ==> Parameters: -800.0(Double), 1(Integer)
+2020-07-03 21:11:08 <==    Updates: 1
+2020-07-03 21:11:08 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:11:08 ==> Parameters: 800.0(Double), 2(Integer)
+2020-07-03 21:11:08 <==    Updates: 1
+2020-07-03 21:11:08 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-03 21:11:08 ==> Parameters: 1(Integer), 2(Integer), 800.0(Double)
+2020-07-03 21:11:08 <==    Updates: 1
+2020-07-03 21:11:08 张无忌向赵敏转账800.0元
+2020-07-03 21:11:08 ==>  Preparing: select count(*) from log 
+2020-07-03 21:11:08 ==> Parameters: 
+2020-07-03 21:11:08 <==      Total: 1
+2020-07-03 21:11:08 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:11:08 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-03 21:11:08 <==      Total: 5
+2020-07-03 21:11:11 ==>  Preparing: select count(*) from log 
+2020-07-03 21:11:11 ==> Parameters: 
+2020-07-03 21:11:11 <==      Total: 1
+2020-07-03 21:11:11 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:11:11 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-03 21:11:11 <==      Total: 5
+2020-07-03 21:11:11 ==>  Preparing: select count(*) from log 
+2020-07-03 21:11:11 ==> Parameters: 
+2020-07-03 21:11:11 <==      Total: 1
+2020-07-03 21:11:11 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:11:11 ==> Parameters: 10(Integer), 5(Integer)
+2020-07-03 21:11:11 <==      Total: 2
+2020-07-03 21:11:14 ==>  Preparing: select count(*) from log 
+2020-07-03 21:11:14 ==> Parameters: 
+2020-07-03 21:11:14 <==      Total: 1
+2020-07-03 21:11:14 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:11:14 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-03 21:11:14 <==      Total: 5
+2020-07-03 21:11:15 ==>  Preparing: select count(*) from log 
+2020-07-03 21:11:15 ==> Parameters: 
+2020-07-03 21:11:15 <==      Total: 1
+2020-07-03 21:11:15 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:11:15 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-03 21:11:15 <==      Total: 5
+2020-07-03 21:13:13 ==>  Preparing: update account set pwd = ? where id = ? 
+2020-07-03 21:13:13 ==> Parameters: 123456(String), 1(Integer)
+2020-07-03 21:13:13 <==    Updates: 1
+2020-07-03 21:13:58 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-03 21:13:58 ==> Parameters: 1(Integer), 123456(String)
+2020-07-03 21:13:58 <==      Total: 1
+2020-07-03 21:13:58 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-03 21:13:58 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-03 21:13:58 <==      Total: 1
+2020-07-03 21:13:58 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:13:58 ==> Parameters: 1900.0(Double), 1(Integer)
+2020-07-03 21:13:58 <==    Updates: 1
+2020-07-03 21:13:58 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-03 21:13:58 ==> Parameters: -1900.0(Double), 2(Integer)
+2020-07-03 21:13:58 <==    Updates: 1
+2020-07-03 21:13:58 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-03 21:13:58 ==> Parameters: 1(Integer), 2(Integer), -1900.0(Double)
+2020-07-03 21:13:58 <==    Updates: 1
+2020-07-03 21:13:58 张无忌向赵敏转账-1900.0元
+2020-07-03 21:13:58 ==>  Preparing: select count(*) from log 
+2020-07-03 21:13:58 ==> Parameters: 
+2020-07-03 21:13:58 <==      Total: 1
+2020-07-03 21:13:58 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:13:58 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-03 21:13:58 <==      Total: 5
+2020-07-03 21:14:00 ==>  Preparing: select count(*) from log 
+2020-07-03 21:14:00 ==> Parameters: 
+2020-07-03 21:14:00 <==      Total: 1
+2020-07-03 21:14:00 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:14:00 ==> Parameters: 5(Integer), 5(Integer)
+2020-07-03 21:14:00 <==      Total: 5
+2020-07-03 21:14:00 ==>  Preparing: select count(*) from log 
+2020-07-03 21:14:00 ==> Parameters: 
+2020-07-03 21:14:00 <==      Total: 1
+2020-07-03 21:14:00 ==>  Preparing: select * from log limit ?,? 
+2020-07-03 21:14:00 ==> Parameters: 10(Integer), 5(Integer)
+2020-07-03 21:14:00 <==      Total: 3
+2020-07-04 22:11:16 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-04 22:11:16 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-04 22:11:16 <==      Total: 1
+2020-07-05 20:41:06 ==>  Preparing: select count(*) from log 
+2020-07-05 20:41:06 ==> Parameters: 
+2020-07-05 20:41:06 <==      Total: 1
+2020-07-05 20:41:09 ==>  Preparing: select count(*) from log 
+2020-07-05 20:41:09 ==> Parameters: 
+2020-07-05 20:41:09 <==      Total: 1
+2020-07-05 20:41:33 ==>  Preparing: select * from account where id =? and pwd = ? 
+2020-07-05 20:41:33 ==> Parameters: 1(Integer), 123456(String)
+2020-07-05 20:41:33 <==      Total: 1
+2020-07-05 20:41:33 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-05 20:41:33 ==> Parameters: 2(Integer), 赵敏(String)
+2020-07-05 20:41:33 <==      Total: 1
+2020-07-05 20:41:33 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-05 20:41:33 ==> Parameters: -100.0(Double), 1(Integer)
+2020-07-05 20:41:33 <==    Updates: 1
+2020-07-05 20:41:33 ==>  Preparing: update account set balance = balance + ? where id = ? 
+2020-07-05 20:41:33 ==> Parameters: 100.0(Double), 2(Integer)
+2020-07-05 20:41:33 <==    Updates: 1
+2020-07-05 20:41:33 ==>  Preparing: insert into log values (default,?,?,?) 
+2020-07-05 20:41:33 ==> Parameters: 1(Integer), 2(Integer), 100.0(Double)
+2020-07-05 20:41:33 <==    Updates: 1
+2020-07-05 20:41:33 张无忌向赵敏转账100.0元
+2020-07-05 20:41:33 ==>  Preparing: select count(*) from log 
+2020-07-05 20:41:33 ==> Parameters: 
+2020-07-05 20:41:33 <==      Total: 1
+2020-07-05 20:41:33 ==>  Preparing: select * from log limit ?,? 
+2020-07-05 20:41:33 ==> Parameters: 0(Integer), 5(Integer)
+2020-07-05 20:41:33 <==      Total: 5
+2020-07-06 21:57:11 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-06 21:57:11 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-06 21:57:11 <==      Total: 1
+2020-07-06 22:03:30 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-06 22:03:30 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-06 22:03:30 <==      Total: 1
+2020-07-06 22:04:29 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-06 22:04:29 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-06 22:04:29 <==      Total: 1
+2020-07-06 22:06:16 ==>  Preparing: select * from account where id = ? and name = ? 
+2020-07-06 22:06:16 ==> Parameters: 1(Integer), 张无忌(String)
+2020-07-06 22:06:16 <==      Total: 1

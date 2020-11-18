@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须为对应接口的全限定路径 -->
+<mapper namespace="com.bjsxt.mapper.AccountMapper">
+	<!--id要和接口中的方法名一致 -->
+	<select id="selAll" resultType="account">
+		select * from account
+	</select>
+	<!-- 如果有多个参数，parameterType不用写 -->
+	<select id="selByIdName" resultType="account">
+		<!-- 取到第一个第二个参数 -->
+		<!-- select * from account where id = #{0} and name = #{1} -->
+		<!-- select * from account where id = #{param1} and name = #{param2} -->
+		
+		<!-- 用此方法时要在接口参数前加注解 -->
+		select * from account where id = #{id} and name = #{name}
+	</select>
+	
+
+</mapper>

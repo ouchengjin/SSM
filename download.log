@@ -1,0 +1,107 @@
+2020-08-22 18:39:33 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 18:39:33 ==> Parameters: zhangsan额鹅鹅鹅(String), 123123(String), 1a2454d5c1564d1ab2208d9a6272ba3f.jpg(String)
+2020-08-22 18:39:33 <==    Updates: 1
+2020-08-22 18:39:33 ==>  Preparing: select * from t_resource 
+2020-08-22 18:39:33 ==> Parameters: 
+2020-08-22 18:39:33 <==      Total: 2
+2020-08-22 18:39:34 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 18:39:34 ==> Parameters: 2(Integer)
+2020-08-22 18:39:34 <==    Updates: 1
+2020-08-22 18:42:01 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 18:42:01 ==> Parameters: 撒大大(String), 123123(String), dc9ee820d2564bcc814436c8b23f9d43.jpg(String)
+2020-08-22 18:42:01 <==    Updates: 1
+2020-08-22 18:42:01 ==>  Preparing: select * from t_resource 
+2020-08-22 18:42:01 ==> Parameters: 
+2020-08-22 18:42:01 <==      Total: 2
+2020-08-22 18:42:03 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 18:42:03 ==> Parameters: 2(Integer)
+2020-08-22 18:42:03 <==    Updates: 1
+2020-08-22 18:42:03 撒大大下载了spring第二天.png
+2020-08-22 18:47:04 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 18:47:04 ==> Parameters: 撒大大(String), 123123(String), 74f3df8c04d8469e952226a5de0d8708.jpg(String)
+2020-08-22 18:47:04 <==    Updates: 1
+2020-08-22 18:47:05 ==>  Preparing: select * from t_resource 
+2020-08-22 18:47:05 ==> Parameters: 
+2020-08-22 18:47:05 <==      Total: 2
+2020-08-22 18:47:35 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 18:47:35 ==> Parameters: 撒打算大所大所(String), 123123(String), 0cc14d47816249e3ad9361e6e419ef59.jpg(String)
+2020-08-22 18:47:35 <==    Updates: 1
+2020-08-22 18:47:35 ==>  Preparing: select * from t_resource 
+2020-08-22 18:47:35 ==> Parameters: 
+2020-08-22 18:47:35 <==      Total: 2
+2020-08-22 18:50:04 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 18:50:04 ==> Parameters: 1(Integer)
+2020-08-22 18:50:04 <==    Updates: 1
+2020-08-22 18:50:04 撒打算大所大所下载了spring第一天.doc
+2020-08-22 18:50:09 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 18:50:09 ==> Parameters: 2(Integer)
+2020-08-22 18:50:09 <==    Updates: 1
+2020-08-22 18:50:09 撒打算大所大所下载了spring第二天.png
+2020-08-22 18:59:57 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 18:59:57 ==> Parameters: zhangsan额鹅鹅鹅(String), 123123(String), 8e5b550c9528464799e490c54b23809e.jpg(String)
+2020-08-22 18:59:57 <==    Updates: 1
+2020-08-22 18:59:57 ==>  Preparing: select * from t_resource 
+2020-08-22 18:59:57 ==> Parameters: 
+2020-08-22 18:59:57 <==      Total: 2
+2020-08-22 18:59:58 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 18:59:58 ==> Parameters: 2(Integer)
+2020-08-22 18:59:58 <==    Updates: 1
+2020-08-22 18:59:58 zhangsan额鹅鹅鹅下载了spring第二天.png
+2020-08-22 19:02:55 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 19:02:55 ==> Parameters: ffff(String), 123123(String), c8e0931214ed48f99985040b8e2e1a49.jpg(String)
+2020-08-22 19:02:55 <==    Updates: 1
+2020-08-22 19:02:55 ==>  Preparing: select * from t_resource 
+2020-08-22 19:02:55 ==> Parameters: 
+2020-08-22 19:02:55 <==      Total: 2
+2020-08-22 19:02:56 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:02:56 ==> Parameters: 2(Integer)
+2020-08-22 19:02:56 <==    Updates: 1
+2020-08-22 19:02:56 ffff下载了spring第二天.png
+2020-08-22 19:03:01 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:03:01 ==> Parameters: 1(Integer)
+2020-08-22 19:03:01 <==    Updates: 1
+2020-08-22 19:03:01 ffff下载了spring第一天.doc
+2020-08-22 19:07:16 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:07:16 ==> Parameters: 1(Integer)
+2020-08-22 19:07:16 <==    Updates: 1
+2020-08-22 19:07:16 ffff下载了spring第一天.doc
+2020-08-22 19:07:38 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:07:38 ==> Parameters: 1(Integer)
+2020-08-22 19:07:38 <==    Updates: 1
+2020-08-22 19:07:38 ffff下载了spring第一天.doc
+2020-08-22 19:07:58 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:07:58 ==> Parameters: 1(Integer)
+2020-08-22 19:07:58 <==    Updates: 1
+2020-08-22 19:07:58 ffff下载了spring第一天.doc
+2020-08-22 19:08:09 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:08:09 ==> Parameters: 1(Integer)
+2020-08-22 19:08:09 <==    Updates: 1
+2020-08-22 19:08:09 ffff下载了spring第一天.doc
+2020-08-22 19:09:45 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:09:45 ==> Parameters: 1(Integer)
+2020-08-22 19:09:45 <==    Updates: 1
+2020-08-22 19:09:45 ffff下载了spring第一天.doc
+2020-08-22 19:10:37 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:10:37 ==> Parameters: 2(Integer)
+2020-08-22 19:10:37 <==    Updates: 1
+2020-08-22 19:10:37 ffff下载了spring第二天.png
+2020-08-22 19:15:30 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 19:15:30 ==> Parameters: zhan(String), 123123(String), 1402fdafbc654891bf765bc611f6d2ec.jpg(String)
+2020-08-22 19:15:30 <==    Updates: 1
+2020-08-22 19:15:30 ==>  Preparing: select * from t_resource 
+2020-08-22 19:15:30 ==> Parameters: 
+2020-08-22 19:15:30 <==      Total: 2
+2020-08-22 19:15:35 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:15:35 ==> Parameters: 2(Integer)
+2020-08-22 19:15:35 <==    Updates: 1
+2020-08-22 19:15:35 zhan下载了spring第二天.png
+2020-08-22 19:16:27 ==>  Preparing: insert into t_user values(default,?,?,?) 
+2020-08-22 19:16:27 ==> Parameters: zhan(String), 123123(String), 3112dbf932934c01aef9696de47aead8.jpg(String)
+2020-08-22 19:16:27 <==    Updates: 1
+2020-08-22 19:16:27 ==>  Preparing: select * from t_resource 
+2020-08-22 19:16:27 ==> Parameters: 
+2020-08-22 19:16:27 <==      Total: 2
+2020-08-22 19:16:29 ==>  Preparing: update t_resource set dcount=dcount+1 where id = ? 
+2020-08-22 19:16:29 ==> Parameters: 2(Integer)
+2020-08-22 19:16:29 <==    Updates: 1
+2020-08-22 19:16:29 zhan下载了spring第二天.png

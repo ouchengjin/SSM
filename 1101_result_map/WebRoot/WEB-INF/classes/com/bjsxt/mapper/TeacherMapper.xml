@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.TeacherMapper">
+	<!-- resultMap用于自定义映射关系（实体类和表字段的映射）
+		type属性：用于指定哪个类需要被映射
+		id属性:用于指定resultMap的名字
+	 -->
+	<resultMap type="teacher" id="tmap">
+		<!-- 
+			id:用于主键的映射关系
+			result：用于其他字段的映射关系
+		 -->
+		<id column="id" property="id1"/>
+		<result column="name" property="name1"/>
+	</resultMap>
+	<select id="selAll"  resultMap="tmap">
+		select * from teacher
+ 	</select>
+	
+	
+</mapper>

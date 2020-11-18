@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.MenuMapper">
+
+	<resultMap type="menu" id="mm">
+		<id column="id" property="id"/>
+		<collection property="list" select="selMenu" column="id"/>
+	</resultMap>
+	<select id="selMenu" parameterType="int" resultMap="mm">
+		select * from menu where pid = #{0}
+	</select>
+</mapper>

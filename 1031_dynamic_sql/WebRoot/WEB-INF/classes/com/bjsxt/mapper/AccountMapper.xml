@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须为对应接口的全限定路径 -->
+<mapper namespace="com.bjsxt.mapper.AccountMapper">
+	<!-- <select id="sel"  resultType="account">
+		select * from account where 1=1
+		OGNL表达式，直接使用名称判断即可（接口中的参数一定要加注解）
+		<if test="name != null and name !=''">
+			and name = #{name}
+		</if>
+		<if test="pwd !=null and pwd !=''">
+			and pwd = #{pwd}
+		</if>
+	</select> -->
+	<!-- <select id="sel"  resultType="account">
+		select * from account 
+		会自动加上where且去掉第一个and
+		<where>
+			OGNL表达式，直接使用名称判断即可（接口中的参数一定要加注解）
+			<if test="name != null and name !=''">
+				and name = #{name}
+			</if>
+			<if test="pwd !=null and pwd !=''">
+				and pwd = #{pwd}
+			</if>
+		</where>
+	</select> -->
+	<!-- <select id="sel"  resultType="account">
+		select * from account 
+		会自动加上where且去掉第一个and
+		<where>
+			<choose>
+				第一个when如果有内容就不会检测第二个。有点像switch case
+				<when test="name != null and name !=''">
+					and name = #{name}
+				</when>
+				<when test="pwd != null and pwd !=''">
+					and pwd = #{pwd}
+				</when>
+				<otherwise>
+					and 1 = 1
+				</otherwise>
+			</choose>
+		</where>
+	</select> -->
+	<!-- <update id="upd" parameterType="account">
+		update account 
+		<set>
+			<if test="pwd != null and pwd !=''">
+				pwd = #{pwd},
+			</if>
+			<if test="name != null and name !=''">
+				name = #{name},
+			</if>
+		</set>
+		where id = #{id}
+	</update> -->
+	<update id="upd" parameterType="account">
+		update account 
+		<!-- 去除前面的'a'，在前面加'set'，去除后面的',' -->
+		<trim prefixOverrides="a" prefix="set" suffixOverrides=",">
+			apwd = #{pwd},
+		</trim>
+		where id = #{id}
+	</update>
+	
+	<select id="sel"  resultType="account">
+		select * from account 
+		<!-- 会自动加上where且去掉第一个and -->
+		<where>
+			<!-- OGNL表达式，直接使用名称判断即可（接口中的参数一定要加注解） -->
+			<if test="name != null and name !=''">
+				<bind name="name" value="'%'+name+'%'"/>
+				and name like #{name}
+			</if>
+			<if test="pwd !=null and pwd !=''">
+				and pwd = #{pwd}
+			</if>
+		</where>
+	</select>
+	<!-- 定义一些固定的sql语句的 -->
+	<sql id="test">id,pwd,balance,name</sql>
+	<!-- 参数是什么类型就写什么类型，返回类型才写泛型类型 -->
+	<select id="selByIn" parameterType="list" resultType="account">
+		select 
+		<include refid="test"/>
+		 from account where id in
+		<foreach collection="list" open="(" close=")" separator="," item="each">
+			#{each}
+		</foreach>
+	</select>
+	
+</mapper>

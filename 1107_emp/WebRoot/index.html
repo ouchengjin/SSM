@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table{
+		width: 60%;
+		text-align: center;
+		border-collapse: collapse;	
+
+	}
+	tr,td{
+		border: 1px solid blue;
+	
+	}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var page = 1;
+		var size = 3;
+		getEmp(page,size);
+	});
+	
+	function getEmp(page,size){
+		$.getJSON("emp.sxt",{"page":page,"size":size},function(result){
+			console.info(result);
+			var tr = "";
+			for(var i = 0;i<result.list.length;i++){
+			var temp = result.list[i];
+			tr += "<tr>"
+			tr += "<td>"+temp.empno+"</td>"
+			tr += "<td>"+temp.ename+"</td>"
+			tr += "<td>"+temp.department.dname+"</td>"
+			tr += "</tr>"
+			}
+			$("#tb").html(tr);
+			//给a标签绑定点击事件
+			if(result.hasPrev){
+					$("a:eq(0)").attr("onclick","getEmp("+result.prevPage+","+result.size+");");
+				}
+			if(result.hasNext){
+					$("a:eq(1)").attr("onclick","getEmp("+result.nextPage+","+result.size+");");
+				}
+			
+			
+		});
+	}
+</script>
+</head>
+<body>
+	<center>
+		<table>
+			<tr>
+				<td>员工</td>
+				<td>姓名</td>
+				<td>所在部门</td>
+			</tr>
+			<tbody id="tb"></tbody>
+		</table>
+		<a href="javascript:void(0)">上一页</a> | <a href="javascript:void(0)">下一页</a>
+	</center>
+</body>
+</html>

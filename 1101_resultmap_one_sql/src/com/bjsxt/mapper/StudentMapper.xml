@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.StudentMapper">
+		<resultMap type="student" id="smap">
+			<id column="id" property="id"/>
+			<result column="name" property="name"/>
+			<result column="age" property="age"/>
+			<result column="tid" property="tid"/>
+			<association property="teacher" javaType="teacher">
+				<id column="tid" property="id"/>
+				<result column="tname" property="name"/>
+			</association>
+		</resultMap>
+		<select id="selAll" resultMap="smap">
+			select s.*, t.name tname from student s LEFT OUTER  JOIN teacher t on s.tid = t.id
+		</select>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.PeopleMapper">
+	<!-- 新增 -->
+	<insert id="addPeople" parameterType="people">
+		insert into people values (default,#{name},#{age})
+	</insert>
+	<!-- 修改 -->
+	<update id="updatePeople" parameterType="people">
+		update people set name = #{name},age = #{age} where id = #{id}
+	</update>
+	<!-- 删除 -->
+	<delete id="deletePeople" parameterType="int" >
+		delete from people where id  = #{id}
+	</delete>
+	
+
+</mapper>

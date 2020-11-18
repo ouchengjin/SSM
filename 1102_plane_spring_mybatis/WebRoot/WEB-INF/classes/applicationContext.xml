@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 配置数据源 -->
+	<!-- class要到spring-jdbc.jar -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/test401" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean> 
+	
+	<!-- 配置mybatis的SqlSessionFactory -->
+	<!-- class要到mybatis-spring.jar -->
+	<bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="typeAliasesPackage" value="com.bjsxt.pojo"></property>
+	</bean>
+	
+	<!-- 配置mybatis的mapper扫描器 -->
+	<!-- class要到mybatis-spring.jar -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="sqlSessionFactory" ref="factory" />
+		<property name="basePackage" value="com.bjsxt.mapper" />
+	</bean>
+	<!-- name是属性名,ref后面是spring已经创建好的airportMapper -->
+	<bean id="airportService" class="com.bjsxt.service.impl.AirportServiceImpl">
+		<property name="airportMapper" ref="airportMapper" />
+	</bean>
+	
+	<bean id="planeService" class="com.bjsxt.service.impl.PlaneServiceImpl">
+		<property name="planeMapper" ref="planeMapper" />
+	</bean>
+</beans>

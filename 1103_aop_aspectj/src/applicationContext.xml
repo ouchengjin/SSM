@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="demo" class="com.bjsxt.test.Demo"/>
+ 	<!-- 配置通知  执行顺序和before和after顺序无关-->
+	<bean id="demoAdvice" class="com.bjsxt.advice.DemoAdvice"></bean>
+	<!-- 配置aop -->
+	<aop:config>
+		<!-- ref表示切面引用哪个通知对象 -->
+		<aop:aspect ref="demoAdvice">
+			<!-- 配置切点 -->
+			<aop:pointcut expression="execution(* com.bjsxt.test.Demo.method2(..))" id="method2name"/>
+			<!-- 前置通知 -->
+			<!-- <aop:before method="beforeDemo" pointcut-ref="method2name"/> -->
+			<!-- 后置通知 -->
+			<!-- <aop:after method="afterDemo" pointcut-ref="method2name"/> -->
+			<!-- <aop:after-returning method="afterDemo" pointcut-ref="method2name"/> -->
+			<!-- 异常通知 -->
+			<aop:after-throwing method="exceptionDemo" pointcut-ref="method2name"/>
+			<!-- 环绕通知 -->
+			<aop:around method="aroundAdvice" pointcut-ref="method2name"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

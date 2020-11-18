@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.StudentMapper">
+	<resultMap type="student" id="smap">
+	<!-- 	注意, 在N+1查询方式中, 如果属性名和列名相同, 可以省略不配, 但是MyBatis只会映射一次, 所以作为参数传递的列如果想获取值, 即使同名也不能省略. -->
+		<!-- <id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="age" property="age"/> -->
+		<result column="tid" property="tid"/>
+		<association property="teacher" select="com.bjsxt.mapper.TeacherMapper.selById" column="tid"></association>
+	</resultMap>
+	
+	<select id="selAll" resultMap="smap">
+		select * from student
+	</select>	
+</mapper>

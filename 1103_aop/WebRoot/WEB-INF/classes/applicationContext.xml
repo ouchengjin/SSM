@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="demo" class="com.bjsxt.test.Demo"/>
+    <bean id="demo2" class="com.bjsxt.test.Demo2"/>
+ 	<!-- 配置通知  执行顺序和before和after顺序无关-->
+ 	<bean id="before" class="com.bjsxt.advice.DemoBeforeAdvice"/>
+ 	<bean id="after" class="com.bjsxt.advice.DemoAfterAdvice"/>
+ 	<bean id="exception" class="com.bjsxt.advice.DemoThrowsAdvice"/>
+ 	<bean id="around" class="com.bjsxt.advice.DemoAroundAdvice"></bean>
+
+	<!-- 配置aop -->
+	<aop:config>
+		<!-- expression用于指定作为切点的方法,"*"代表通配符，也代表权限，一个意思
+			id为切点的名称
+		 -->
+		<aop:pointcut expression="execution(* com.bjsxt.test.*.*(..))" id="method2name"/>
+		<aop:advisor advice-ref="before" pointcut-ref="method2name"/>
+		<aop:advisor advice-ref="after" pointcut-ref="method2name"/>
+		<aop:advisor advice-ref="around" pointcut-ref="method2name"/>
+		<aop:advisor advice-ref="exception" pointcut-ref="method2name"/>
+	</aop:config>
+	
+</beans>

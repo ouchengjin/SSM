@@ -1,0 +1,8 @@
+0    [main] INFO  com.bjsxt.log4j.Test  - 我是info
+3    [main] WARN  com.bjsxt.log4j.Test  - 我是warn
+3    [main] ERROR com.bjsxt.log4j.Test  - 我是error
+4    [main] FATAL com.bjsxt.log4j.Test  - 我是fatal
+0    [main] INFO  com.bjsxt.log4j.Test  - 我是info
+7    [main] WARN  com.bjsxt.log4j.Test  - 我是warn
+7    [main] ERROR com.bjsxt.log4j.Test  - 我是error
+7    [main] FATAL com.bjsxt.log4j.Test  - 我是fatal
